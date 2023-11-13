@@ -1,0 +1,81 @@
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1); /* Adjust the opacity here (0 to 1) */
+    z-index: -1;
+}
+
+
+#intro {
+    background-image: url('img/intro.jpg'); /* Replace with your intro image URL */
+    z-index: 1;
+}
+
+#project1 {
+    background-image: url('img/section1.jpg'); /* Replace with your project 1 image URL */
+}
+
+/* Add similar styles for other project sections */
+
+.project-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-box {
+    max-width: 400px;
+    text-align: center;
+}
+
+.text-box-light {
+    min-width: 400px;
+    max-width: 600px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.intro-icon {
+    color: white;
+    font-size: 32px;
+}
+
+.social-icons {
+    visibility: hidden;
+}
+
+.social-icons a {
+    margin-right: 10px; /* Adjust the spacing between icons */
+}
+
+.social-icons a:hover i {
+    color:lightgray ; /* Change to the desired hover color */
+    transition: 0.2s;
+}
+
+#intro h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42pt;
+}
+
+#intro .sub-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24pt;
+
+}
