@@ -1,3 +1,8 @@
+
+html {
+    scroll-behavior:smooth
+}
+
 .parallax {
     height: 100vh;
     background-attachment: fixed;
@@ -21,6 +26,10 @@
     z-index: -1;
 }
 
+#about_me {
+    background-image: url('img/section1.jpg'); /* Replace with your intro image URL */
+    z-index: 1;
+}
 
 #intro {
     background-image: url('img/intro.jpg'); /* Replace with your intro image URL */
@@ -28,7 +37,7 @@
 }
 
 #project1 {
-    background-image: url('img/section1.jpg'); /* Replace with your project 1 image URL */
+    background-image: url('img/about-me.jpg'); /* Replace with your project 1 image URL */
 }
 
 /* Add similar styles for other project sections */
@@ -37,18 +46,42 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 50px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.project-image {
+    margin-right: 100px; /* Separate the image and text by 100px */
 }
 
 .text-box {
-    max-width: 400px;
+    max-width: 600px;
     text-align: center;
 }
 
-.text-box-light {
-    min-width: 400px;
-    max-width: 600px;
-    text-align: center;
-    background-color: whitesmoke;
+.text-box h2 {
+    color:cornflowerblue
+}
+
+.text-box h3 {
+    margin-bottom: 20px;
+}
+
+.text-box span {
+    font-weight: bold;
+    color:cornflowerblue
+}
+
+.view-link {
+    font-size: 18px;
 }
 
 .intro-icon {
@@ -78,4 +111,26 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 24pt;
 
+}
+
+.scroll-box {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.scroll-box p {
+    margin-bottom: 5px; /* Add some spacing between text and icon */
+    font-size: 14px;
+}
+
+.scroll-box i {
+    display: block; /* Make the icon a block-level element */
+    font-size: 24px; /* Adjust the size of the icon */
+    margin-top: 5px; /* Add spacing between text and icon */
+    visibility: hidden;
 }
